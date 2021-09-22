@@ -53,3 +53,8 @@ ul {
   margin-top: 14%;
   padding-bottom: 1rem;
 }
+
+.desc {
+  font-size: 0.8rem;
+  color: rgb(212, 212, 212);
+}

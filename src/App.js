@@ -3,19 +3,58 @@ import "./styles.css";
 
 var movieDb = {
   Fantasy: [
-    { name: "Harry Potter and The Deadly Hollows: Part 1&2", rating: "97%" },
-    { name: "The Jungle Book (2016)", rating: "94%" },
-    { name: "Jumanji (1995)", rating: "92%" }
+    {
+      name: "Harry Potter and The Deadly Hollows: Part 1&2",
+      description: "Harry Potter and Voldemort final face off",
+      rating: "97%"
+    },
+    {
+      name: "The Jungle Book (2016)",
+      description: "A boy living his life with animals",
+      rating: "94%"
+    },
+    {
+      name: "Jumanji (1995)",
+      description: "A magical game with mysteries",
+      rating: "92%"
+    }
   ],
   Action: [
-    { name: "Justice League (2017)", rating: "93%" },
-    { name: "Avenger: End Games (2019)", rating: "95%" },
-    { name: "Black Widow (2021)", rating: "98%" }
+    {
+      name: "Justice League (2017)",
+      description: "Batman seeks the help of Wonder Woman",
+      rating: "93%"
+    },
+    {
+      name: "Avenger: End Games (2019)",
+      description: "End of Thanos",
+      rating: "95%"
+    },
+    {
+      name: "Black Widow (2021)",
+      description: "Story about Natasha Romanoff",
+      rating: "98%"
+    }
   ],
   Horror: [
-    { name: "The Evil Returns (2012)", rating: "92%" },
-    { name: "The Conjuring (2013)", rating: "97%" },
-    { name: "The Conjuring 2 (2016)", rating: "94%" }
+    {
+      name: "Evil Dead (1981)",
+      description:
+        "American supernatural horror film franchise created by Sam Raimi",
+      rating: "92%"
+    },
+    {
+      name: "The Conjuring (2013)",
+      description:
+        "Paranormal investigators Ed and Lorraine Warren take on one of the most sensational cases",
+      rating: "97%"
+    },
+    {
+      name: "The Conjuring 2 (2016)",
+      description:
+        "Paranormal investigators Ed and Lorraine Warren take another sensational cases",
+      rating: "94%"
+    }
   ]
 };
 
@@ -49,6 +88,7 @@ export default function App() {
             <li key={movie.name}>
               {" "}
               <div>{movie.name}</div>
+              <div className="desc">{movie.description}</div>
               <div>{movie.rating}</div>
             </li>
           ))}
